@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>Gala 2024 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/daisyui/2.46.1/full.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<!-- Couleur du fond-->  
+<body style="background-color:#b3b3b3;">
+<!--<html data-theme="test">-->
+
+<div class="hero min-h-screen" style="background-image: url(https://erindap.github.io/images-gala/11zon_cropped.png);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-center text-neutral-content">
+    <div class="max-w-md">
+      <h1 class="mb-5 text-6xl font-black">Gala de l'ENS 2024 </h1>
+      <p class="mb-5 text-lg">Rejoignez-nous pour une soirée de folie le vendredi 19 janvier</p>
+      <button onclick="scrollToBienvenue()" class="btn btn-primary">En savoir plus</button>
+    </div>
+  </div>
+</div>
+<!-- barre de navigation -->
+<div class="navbar bg-red-400 sticky top-0 z-50" id="navbar">
+  <div class="navbar-start">
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </label>
+      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <li><a onclick="scrollToBienvenue()">Bienvenue</a></li>
+        <li><a onclick="scrollToInscription()">Inscriptions</a> </li>
+        <li><a onclick="scrollToMenu()">Menu</a></li>
+        <li><a onclick="scrollToPlanning()">Planning</a></li>
+        <li><a onclick="scrollToContacts()">Instagram</a></li>
+      </ul>
+    </div>
+    <a class="w-16 h-16"><img src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/logo_galapocalypse.png?raw=true" alt="Logo" class="w-full h-full" />
+    </a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal p-0">
+      <li class="border-b border-white"><a onclick="scrollToBienvenue()">Bienvenue</a></li>
+      <li><a onclick="scrollToInscription()">Inscriptions</a></li>
+      <li><a onclick="scrollToMenu()">Menu</a></li>
+      <li><a onclick="scrollToPlanning()">Planning</a></li>
+      <li><a onclick="scrollToContacts()">Instagram</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a onclick="scrollToInscription()" class="button">S'inscrire</a>
+  </div>
+</div>
+
+<div class="flex flex-col gap-16">
+
+  <div id="bienvenue" class="w-screen p-2 flex flex-col items-center gap-4">
+    <!-- Trailer -->
+    <div class="w-full md:w-3/5 bg-gray-600 rounded-2xl md:p-8 p-3">
+      <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary">Trailer
+      </h2>
+      <iframe width="100%" height="500" src="https://www.youtube.com/embed/wynljcliHso" title="Galapocalyspe"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+<!-- Paragraphe intro -->
+    <div class="md:w-3/5 w-full bg-gray-600 rounded-2xl p-3 md:p-8">
+      <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary">Le
+        Galapocalypse ! </h2>
+      <p class="text-lg text-justify">
+
+
+        Le ... février 2023 à 20h23, l'heure vers laquelle convergent les dernières prédictions pour la fin du monde,
+        venez
+        vivre votre dernière soirée en notre compagnie au gymnase Descartes !
+        <br /><br />
+
+        Votre dévoué comité gala vous donne rendez-vous aux dernières lueurs du jour pour un programme (presque) aussi
+        riche que n'importe quelle eschatologie : défilé sous la bannière des quatre cavaliers, musique lancée par les
+        sept trompettes, mais aussi (parce qu'on peut toujours trouver du réconfort quelque part) des réjouissances
+        gustatives !
+        <br /> <br />
+        Venez nombreux.se.s et n'hésitez pas à venir accompagné.e.s de convives extérieur.e.s pour cette soirée qui
+        promet
+        d'être mémorable !
+
+      </p>
+    </div>
+  </div>
+
+
+  <div id="inscription" class="w-screen p-2 flex flex-col items-center gap-4">
+    <!-- Inscriptions -->
+    <div class="w-full md:w-3/5 bg-gray-600 rounded-2xl md:p-8 p-3">
+      <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary">
+        Inscriptions</h2>
+      <p class="text-lg text-justify">
+
+
+        Voici l'interface permettant d'obtenir ses places pour le GALA, nous rappelons que les personnes extérieures à
+        l'ENS sont acceptées dans la limite d'une personne extérieure par étudiant·e de l'ENS. Les billets sont
+        nominatifs
+        et un contrôle d'identité sera effectué. Aucun remboursement ne sera effectué. Vous pouvez cependant
+        céder/revendre votre billet. Dans ce cas, veuillez contacter le comité gala afin qu'on procède au changement de nom du
+        billet.
+
+
+        <br /><br />
+
+        Avant de pouvoir prendre votre place, vous allez devoir répondre à ce questionnaire. Si vous prenez une place
+        pour
+        un·e tiers, vous vous portez garant·e que la personne ait connaissance de la charte vss et s’engage à la
+        respecter.
+        Attention, le questionnaire suivant comporte des Trigger Warnings (TW). Si vous devez sauter une question pour
+        cause de TW, cochez simplement la case à côté de la question (l’intitulé sera présent après). Nous comptons sur
+        votre bonne foi pour répondre au mieux et assurer une soirée qui se déroulera dans les meilleures conditions.
+      </p>
+      <div id = "test"  class="mcq w-full border-t-4 border-primary mt-8">
+        <div class="quiz"></div>
+        <div class="flex justify-center gap-2">
+          <div id="start" class="w-full md:w-1/2 button start">Commencez le quizz</div>
+          <div class="next button">Question suivante</div>
+          <div class="unblur button">Révéler la question </div>
+          <div class="w-full md:w-1/2 button lien">Accéder à l'inscription </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div id="menu" class="w-screen p-2 flex flex-col items-center">
+    <!-- Menu -->
+    <div class="w-full md:w-3/5 bg-gray-600 rounded-2xl p-3 md:p-8">
+      <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary">Menu du
+        GALA</h2>
+      <p class="text-lg text-justify">
+
+
+        Voici le menu qui vous attend pour cette merveilleuse soirée, il a été entièrement confectionné par des
+        étudiant·es
+        de l'ENS !!
+
+    </div>
+
+    <img src="https://erindap.github.io/images-gala/menu%20(2)-1.png" alt="Menu du Galapocalypse"
+      class="w-full md:w-3/5 rounded-2xl mx-auto">
+
+  </div>
+
+
+  <div id="planning" class="w-screen p-2 flex flex-col items-center gap-4">
+    <!-- Planning -->
+    <div class="w-full md:w-3/5 bg-gray-600 rounded-2xl p-8">
+      <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary">Planning
+        du GALA</h2>
+    </div>
+
+    <div class="w-screen min-h-screen p-4 md:p-16 flex flex-col md:items-center items-start gap-4 text-white">
+      <section class="timeline">
+        <ul>
+          <li>
+            <div>
+              <time>20h</time> Ouverture !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>20h30</time> Rock 6 temps !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>20h40</time> Fanfare !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>21h30</time> Défilé !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>22h</time> Happening de folie !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>22h20</time> Show Pompom !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>22h35</time>Show Bouli !
+            </div>
+          </li>
+	  <li>
+		<div>
+			<time>22h50</time> Rock 4 temps et danse libre !
+		</div>
+	 </li>
+          <li>
+            <div>
+              <time>23h15</time> Deuxième happening de folie !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>23h20</time> Drag show !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>23h40</time> Groupes de musique !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>00h30</time> Sets de DJs !
+            </div>
+          </li>
+          <li>
+            <div>
+              <time>05h00</time> Fin du GALA (à l'année prochaine !!)
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+  </div>
+
+    <div id="contacts" class="w-screen p-2 flex flex-col items-center">
+    <!-- Menu -->
+    <div class="w-full md:w-3/5 bg-gray-600 rounded-2xl p-3 md:p-8">
+      <h2 class="w-full md:w-1/2 mx-auto text-center text-4xl font-bold text-primary mb-4 border-b-4 pb-4 border-primary">Instagram</h2>
+      <p class="text-lg text-justify">
+
+    </div>
+    <a href="https://www.instagram.com/gala_ens_lyon_2024/">
+    <img src="https://github.com/pierreschmittbuhl/Gala-2024/blob/main/images/Insta.png?raw=true" alt="Instagram"
+      class="w-full md:w-3/5 rounded-2xl mx-auto"></a>
+
+  </div>
+  
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
+
